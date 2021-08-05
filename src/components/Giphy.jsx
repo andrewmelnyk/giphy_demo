@@ -42,7 +42,7 @@ const Giphy = () => {
 
     const showModal = (id) => {
         const gif = data[data.findIndex(gif => gif.id === id)];
-        console.log(gif);
+
         setGif(gif);
         handleShow();
     }
