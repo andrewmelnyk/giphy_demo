@@ -53,7 +53,7 @@ const Giphy = () => {
         }
 
         return (
-            <Row xs={1} md={2} lg={3} className="g-4">
+            <Row xs={2} md={3} lg={4} className="g-4">
                 {data.map(el => (
                     <Col key={el.id}>
                         <Card>
