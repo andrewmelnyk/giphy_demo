@@ -41,22 +41,11 @@ h5 {
 
 form {
   display: flex;
-  justify-content: flex-end;
-}
-
-form {
-  display: flex;
   align-content: space-around;
   justify-content: space-around;
   padding: .5em;
 }
 
-form > label {
-  padding: .5em 1em .5em 0;
-  flex: 1;
+form input {
+  min-width: 300px;
 }
-
-form > input {
-  flex: 2;
-}
-
