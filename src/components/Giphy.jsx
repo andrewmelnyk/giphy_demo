@@ -138,9 +138,8 @@ const Giphy = () => {
                     </Modal.Header>
                     <Modal.Body>
                         <p>{gif.user && gif.user.description}</p>
-                        <p>Click to copy: 
-                            <a href="!#" onClick={() => openGif(gif.bitly_url)}>{gif.embed_url}</a>
-                        </p>
+                        <p>Click to copy:</p> 
+                        <p><a href="!#" onClick={() => openGif(gif.bitly_url)}>{gif.embed_url}</a></p>
                     </Modal.Body>            
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>Close Me</Button>
