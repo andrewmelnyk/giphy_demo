@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.gifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gif {
+  padding: 0 2px;
+}
+
+.loader {
+  color: blue;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card {
+    margin: 10px;
+    position: relative;
+}
+
