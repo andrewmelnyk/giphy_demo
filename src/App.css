@@ -35,3 +35,6 @@ h5 {
     position: relative;
 }
 
+.modal-body a {
+  word-break: break-all;
+}

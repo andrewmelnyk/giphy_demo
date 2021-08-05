@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loader from './Loader';
 import axios from 'axios';
-import { Card, Row, Col, Button, Modal } from 'react-bootstrap';
+import { Card, Row, Col, Form, Button, Modal } from 'react-bootstrap';
 
 const Giphy = () => {
     const [data, setData] = useState([]);
@@ -117,21 +117,26 @@ const Giphy = () => {
     return (
         <div className="m-2">
             {renderError()}
-            <form className="form-inline justify-content-center m-2">
-                <input 
-                    value={search}
-                    onChange={handleSearchChange}
-                    type="text" 
-                    placeholder="search" 
-                    className="form-control" 
-                />
-                <Button 
-                    type="submit" 
-                    onClick={handleSubmit}
-                    variant="primary"
-                >Go
-                </Button>
-            </form>
+            <Form>
+                <Row>
+                    <Col>
+                        <Form.Label htmlFor="inlineFormInput" visuallyHidden>
+                            Name
+                        </Form.Label>
+                        <Form.Control
+                            className="mb-2"
+                            id="inlineFormInput"
+                            placeholder="Jane Doe"
+                            onChange={handleSearchChange}
+                        />
+                    </Col>
+                    <Col>
+                        <Button type="submit" className="mb-2" onClick={handleSubmit}>
+                            Submit
+                        </Button>
+                    </Col>
+                </Row>
+            </Form>
             {gif && 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
