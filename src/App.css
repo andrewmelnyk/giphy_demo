@@ -38,3 +38,25 @@ h5 {
 .modal-body a {
   word-break: break-all;
 }
+
+form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: .5em;
+}
+
+form > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+
+form > input {
+  flex: 2;
+}
+

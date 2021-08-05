@@ -126,7 +126,7 @@ const Giphy = () => {
                         <Form.Control
                             className="mb-2"
                             id="inlineFormInput"
-                            placeholder="Jane Doe"
+                            placeholder="Search for Gifs"
                             onChange={handleSearchChange}
                         />
                     </Col>
