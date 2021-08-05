@@ -20,6 +20,10 @@ h5 {
     font-size: 12px;
 }
 
+.card {
+  cursor: pointer;
+}
+
 .card-img-top {
     width: 100%;
     height: 15vw;
