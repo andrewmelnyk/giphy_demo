@@ -10,12 +10,18 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "gh-pages": "^3.2.3",
+    "husky": "^7.0.1",
     "material-table": "^1.69.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "npm run deploy"
+    }
   },
   "scripts": {
     "start": "react-scripts start",

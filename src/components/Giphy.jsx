@@ -143,7 +143,7 @@ const Giphy = () => {
                         </p>
                     </Modal.Body>            
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>Close</Button>
+                        <Button variant="secondary" onClick={handleClose}>Close Me</Button>
                         <Button variant="secondary" onClick={() => viewGif(gif.bitly_url)}>Click to view</Button> 
                     </Modal.Footer>
                 </Modal>
