@@ -103,13 +103,14 @@ const Giphy = () => {
         setIsLoading(false);        
     };
 
-    const openGif = (url) => {
-        window.navigator.clipboard.writeText(url);
+    const copyGif = (e) => {
+        e.preventDefault();
+        window.navigator.clipboard.writeText(gif.bitly_url);
         handleClose();
     }
 
-    const viewGif = (url) => {
-        window.open(url, '_blank', 'noopener,noreferrer');
+    const viewGif = () => {
+        window.open(gif.bitly_url, '_blank', 'noopener,noreferrer');
         handleClose();
     }
 
@@ -139,7 +140,7 @@ const Giphy = () => {
                     <Modal.Body>
                         <p>{gif.user && gif.user.description}</p>
                         <p>Click to copy:</p> 
-                        <p><a href="!#" onClick={() => openGif(gif.bitly_url)}>{gif.embed_url}</a></p>
+                        <p><a href="!#" onClick={copyGif}>{gif.embed_url}</a></p>
                     </Modal.Body>            
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>Close Me</Button>
